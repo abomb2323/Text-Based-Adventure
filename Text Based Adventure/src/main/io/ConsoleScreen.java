@@ -6,11 +6,11 @@ import java.awt.event.*;
 import javax.swing.*;
 
 /**
- * 
+ * Class that contains all methods and stuff for the console screen, which is accessed by the main game.
+ *  
  * @author Adam Crick
  * @version 0.0.1:1
- * 
- * Class that contains all methods and stuff for the console screen, which is accessed by the main game.
+ *
  * 
  */
 
@@ -76,6 +76,10 @@ public class ConsoleScreen implements KeyListener{
 		inputArea.setName("INPUT AREA");
 		inputArea.setFont(new Font("monospaced", Font.PLAIN, 12));
 		inputArea.addKeyListener(this);
+	}
+	
+	public void println(String string){
+		mainTextArea.append(string + "\n");
 	}
 	
 	public void keyPressed(KeyEvent e) {
