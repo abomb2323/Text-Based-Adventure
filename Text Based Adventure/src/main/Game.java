@@ -1,9 +1,27 @@
 package main;
 
+import main.io.*;
+
+/**
+ * @author Adam Crick
+ * @version 0.0.1:1
+ * 
+ * Main class for the Text Based Adventure Game, where it all comes together
+ * This is where we'll take the various parts from all over and use them to construct the game.
+ * 
+ */
 public class Game {
 	
+	/**
+	 * Version ID, Release.Major.Minor:Build 
+	 * Must be same throughout all clients.
+	 */
+	private static final String versionID = "0.0.1:1";
+	
 	public static void main(String[] args){
-		System.out.println("Testing EGit with stuff");
+		ConsoleScreen console = new ConsoleScreen("Text Based Adventure v" + versionID, 880, 600);
+		
+		
 	}
 	
 }
